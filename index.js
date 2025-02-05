@@ -3,6 +3,11 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
     "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
     "~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
 
+let passwordLength = 15
 
+function getRandomCharacter() {
+    let randomChar = Math.floor(Math.random() * characters.lenth)
+    return characters[randomChar]
+}
 
 
