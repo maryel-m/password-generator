@@ -10,4 +10,14 @@ function getRandomCharacter() {
     return characters[randomChar]
 }
 
+function generateRandomPassword() {
+    let randomPassword = ""
+    for (let i = 0; i < passwordLength; i ++) {
+        randomPassword += getRandomCharacter()
+    }
+    return randomPassword
+}
 
+const generatedPassword = generateRandomPassword();
+
+console.log("Here is a random password: ", generatedPassword);
