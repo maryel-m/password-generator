@@ -3,21 +3,21 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
     "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
     "~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
 
-let passwordLength = 15
+let passwordLength = 15;
 
-function getRandomCharacter() {
-    let randomChar = Math.floor(Math.random() * characters.lenth)
-    return characters[randomChar]
+function getRandomCharacters() {
+  let randomCharacters = Math.floor(Math.random() * characters.length);
+  return characters[randomCharacters];
 }
 
 function generateRandomPassword() {
-    let randomPassword = ""
-    for (let i = 0; i < passwordLength; i ++) {
-        randomPassword += getRandomCharacter()
-    }
-    return randomPassword
+  let aRandomPassword = "";
+  for (let i = 0; i < passwordLength; i++) {
+    aRandomPassword += getRandomCharacters();
+  }
+  return aRandomPassword;
 }
 
-const generatedPassword = generateRandomPassword();
+const generatedPasswordOne = generateRandomPassword();
 
-console.log("Here is a random password: ", generatedPassword);
+console.log("Here is your random password: ", generatedPasswordOne);
